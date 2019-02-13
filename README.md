@@ -21,4 +21,4 @@ The board was designed as small and simple as possible. Realistically, it _shoul
 
 ![Board Front](Front.jpg "Front")
 ![Board Back](Back.jpg "Back")
-![Board Demo](Demo.webm "Demo")
+![Board Demo](Demo.gif "Demo")
