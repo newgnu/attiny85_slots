@@ -17,3 +17,8 @@ There are multiple different manufacturers making ssd1306 breakouts, and their p
 Many swap the vcc/gnd pins, and that would end badly...
 
 The board was designed as small and simple as possible. Realistically, it _should_ have a capacitor on the power pins of the attiny, some pull-up resistors on the i2c pins, and probably a pull-up resistor on the button.
+
+
+![Board Front](Front.jpg "Front")
+![Board Back](Back.jpg "Back")
+![Board Demo](Demo.webm "Demo")
