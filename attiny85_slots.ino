@@ -100,7 +100,7 @@ void draw_column(uint8_t column){
     uint8_t px_col = column * 48;
 
     oled.area(page, page+1, px_col, px_col+31);
-    oled.writeP(SSD1306_DATA, bitmap + (values[(i*3) + column] *64), 64);
+    oled.writeP(SSD1306_DATA, int(bitmap + (values[(i*3) + column] *64)), 64);
 
     if (page < 1 || page > 5) {continue;}
     oled.fill(page -1, page -1, px_col, px_col +31, 0x00);
@@ -200,11 +200,11 @@ void display_winnings(uint16_t round_winings){
 
 
   oled.area(3, 3, 30, 60);
-  oled.writeP(SSD1306_DATA, msg_win, sizeof(msg_win));
+  oled.writeP(SSD1306_DATA, int(msg_win), sizeof(msg_win));
   drawnum(3, 64, round_winings);
 
   oled.area(4, 4, 30, 60);
-  oled.writeP(SSD1306_DATA, msg_total, sizeof(msg_total));
+  oled.writeP(SSD1306_DATA, int(msg_total), sizeof(msg_total));
   drawnum(4, 64, score);
 }
 
